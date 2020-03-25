@@ -1,0 +1,384 @@
+html {
+    box-sizing: border-box;
+    } 
+
+*, *:before, *:after 
+    {
+    box-sizing: inherit;
+    }
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+ul, ol {
+    list-style-type: none;
+    }
+
+
+.page-wrapper {
+    background-image: url("/images/background-graphic.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 50%; 
+    background-size: auto;
+    position: relative;
+    height: 850px;
+    overflow: hidden;
+}
+
+
+.intro h1 {
+    font-family: "waltz";
+    font-size: 2em;
+    color: red;
+    position: absolute;
+    top: 15px;
+    left: 400px;
+}
+h1::first-letter
+    {
+        color:blue;
+    }
+    /* Just because I could */
+
+.intro h2 {
+    font-family: "waltz";
+    font-size: 1.5em;
+    color: red;
+    position: absolute;
+    top: 55px;
+    left: 400px;
+}
+
+.resources {
+    display: none;
+}
+
+.summary {
+    font-family: "waltz";
+    width: 140px;
+    font-size: 0.85em;
+    position: absolute;
+    top: 62px;
+    left: 60px;
+    transform: rotate(-7deg);
+}
+.summary a {
+    color: red;
+}
+
+
+.benefits {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 87px;
+    left: 800px;
+    transform: rotate(-7deg);
+    opacity: 0; 
+}
+
+.benefits:hover  {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 238, 255);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 0px 15px;
+    left: 700px;
+    opacity: 1;
+    overflow: scroll;
+}
+
+
+
+/* Explanation section */
+    
+.explanation {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: 310px;
+    left: 660px;
+    transform: rotate(2deg);
+    opacity: 0;
+}
+
+
+.explanation:hover  {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 238, 255);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 15px;
+    left: 700px;
+    opacity: 1;
+    overflow: scroll;
+}
+
+/* Participation section */
+
+.participation {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    left:1060px;
+    transform: rotate(-8deg);
+    opacity: 0;
+}
+
+.participation:hover  {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 255, 94);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 15px;
+    left: 700px;
+    opacity: 1;
+    overflow: scroll;
+    z-index: 2;
+}
+
+/* Explanation -- so what is this about? section */
+
+.explanation {
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    position: absolute;
+    top: 430px;
+    left:1025px;
+    opacity: 0;
+
+}
+
+.explanation:hover  {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 255, 94);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 15px;
+    left: 700px;
+    opacity: 1;
+    overflow: scroll;
+    z-index: 2;
+    top: 330px;
+}
+
+
+/* Preamble section */
+
+
+.preamble {
+    width: 170px;
+    height: 170px;
+    display: block;
+    z-index: 20;
+    position: absolute;
+    top: 315px;
+    left: 50px;
+    transform: rotate(3deg);
+    overflow: hidden;
+    background: red;
+    opacity: 0;
+}
+
+.preamble:hover  {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(55, 255, 0);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 15px;
+    left: 40px;
+    top: 260px;
+    opacity: 0;
+    overflow: scroll;
+}
+
+/* Requirements section */
+
+.requirements {
+    width: 130px;
+    height: 130px;
+    display: block;
+    z-index: 20;
+    position: absolute;
+    top: 310px;
+    left: 650px;
+    transform: rotate(3deg);
+    overflow: hidden;
+    opacity: 0;
+}
+
+.requirements:hover  {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(55, 255, 0);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 15px;
+    left: 40px;
+    top: 260px;
+    opacity: 1;
+    overflow: scroll;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    top:600px;
+    left: 850px;
+    transform: rotate(-5deg)
+}
+
+/* Design Archives */
+.design-archives {
+    font-size: 1.2em;
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    width: 75px;
+  
+    font-size: 1.2em;
+    transform: rotate(-5deg);
+    overflow: hidden;
+    opacity: 0;  
+}
+.design-archives a {
+    color: blue;
+}
+
+.design-archives:hover {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 196, 0);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 15px;
+    left: 250px;
+    top:170px;
+    opacity: 1;
+}
+
+
+/* Design Selection */
+
+.design-selection {
+    font-size: 1.2em;
+    position: absolute;
+    top: 95px;
+    left: 250px;
+    width: 90px;
+    height: 90px;
+    transform: rotate(-10deg);
+    overflow: hidden;
+    opacity: 0;
+}
+
+.designer-name {
+    color: rgb(6, 175, 6);
+}
+.design-name {
+    color: blue;
+}
+
+.design-selection:hover {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 196, 0);
+    position: absolute;
+    box-shadow: 5px 2px black;
+    transform: rotate(5deg);
+    padding: 15px;
+    left: 200px;
+    top:170px;
+    opacity: 1;
+}
+
+/* View CSS for this site link */
+.view-css {
+    position: relative;
+    left: 900px;
+    top: 515px;
+    width: 65px;
+    font-size: 0.9em;
+
+}
+
+[title~="Links"] {
+    position: absolute;
+    left: 240px;
+    top: 600px;
+    width: 65px;
+    height: 65px;
+    display: block;
+    z-index: 20;
+    opacity: 0;
+    background: red;
+}
+
+
+[title~="Frequently"] {
+    position: absolute;
+    left: 335px;
+    top: 600px;
+    width: 65px;
+    height: 65px;
+    display: block;
+    z-index: 20;
+    opacity:0;
+ 
+}
+
+[title~="own"] {
+    position: absolute;
+    left: 1030px;
+    top: 310px;
+    width: 100px;
+    height:100px;
+    opacity:0;
+    transform: rotate(-8deg);
+}
+[title~="translated"] {
+    position: absolute;
+    left: 869px;
+    top: 370px;
+    width: 100px;
+    height:100px;
+    transform: rotate(-17deg);
+    opacity: 0;
+    z-index: 20;
+}
+
+[title^="Fork"] {
+position: absolute;
+width: 75px;
+height: 20px;
+left: 400px;
+top: 400px;
+background-color: blueviolet;
+
+}
