@@ -196,7 +196,6 @@ h1::first-letter
     left: 50px;
     transform: rotate(3deg);
     overflow: hidden;
-    background: red;
     opacity: 0;
 }
 
@@ -226,13 +225,14 @@ h1::first-letter
     left: 650px;
     transform: rotate(3deg);
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
+    
 }
 
 .requirements:hover  {
     width: 400px;
     height: 400px;
-    background-color: rgb(55, 255, 0);
+    background-color: rgb(0, 251, 255);
     position: absolute;
     box-shadow: 5px 2px black;
     transform: rotate(5deg);
